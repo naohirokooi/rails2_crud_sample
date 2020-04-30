@@ -1,0 +1,12 @@
+<%= form_for @user , url: "/users", html: { method: :post } do |f| %>
+  <p>投稿</p>
+  <p>名前:<%= f.text_field :name %></p>
+  <p>年齢:<%= f.text_field :age %></p>
+  <input type="submit" value="送信">
+    
+  <!-- form_for @object, html: { multipart: true }, do |f| -->
+  <!-- form_for @object, html: { class: "classname" }, do |f| -->
+
+  
+<% end %>
+    
