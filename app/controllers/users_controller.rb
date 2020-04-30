@@ -11,7 +11,12 @@ class UsersController < ApplicationController
   def create
     User.create(user_params)
   end
-  #編集画面に対応するアクション
+  #詳細アクション
+  def show
+    @user = User.find(params[:id])
+  end
+
+  #編集画面アクション
   def edit
     @user = User.find(params[:id])
   end
